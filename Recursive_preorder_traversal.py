@@ -1,7 +1,7 @@
-Problem statement:
-Given the root TreeNode of a binary tree, write a method to 
-populate an integer list with the data of the nodes of the tree, 
-as visited with pre-order traversal.
+# Problem statement:
+# Given the root TreeNode of a binary tree, write a method to 
+# populate an integer list with the data of the nodes of the tree, 
+# as visited with pre-order traversal.
 
 from typing import List
 
