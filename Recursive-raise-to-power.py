@@ -1,3 +1,7 @@
+# Problem statement
+# Write a method that raises a number base to power of exponent recursively 
+# without using the ^ operator or Math power utilities. The exponent can be negative.
+
 def better_pow(base, exponent):
     """
     Recursively raises base to exponent and returns
