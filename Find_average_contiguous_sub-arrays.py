@@ -1,3 +1,7 @@
+# Problem statement
+# Given an array of n integers and an integer k, find the average of all contiguous subarrays of size k in it. 
+# While the brute force approach will yield a time complexity of O(n * k), try to accomplish this with a time complexity of O(n).
+
 from typing import List, Mapping
 
 
