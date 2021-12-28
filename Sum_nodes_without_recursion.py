@@ -15,20 +15,16 @@ class Solution:
         :param root: Root TreeNode of the tree.
         :return: Sum of all nodes' data.
         """
-        node_stack = deque()
-        node_stack.append(root)
-        node_sum = 0
+        que = deque()
+        que.append(root)
+        tree_sum = 0
         
-        if not root:
-            return 0
-        
-        while len(node_stack) > 0:
-            node = node_stack.popleft()
-            node_sum += node.data
+        while len(que) > 0 and root is not None:
+            node = que.popleft()
             if node.left:
-                node_stack.append(node.left)
-            if node.right:
-                node_stack.append(node.right)
+                que.append(node.left) 
+            if node.right:    
+                que.append(node.right)
+            tree_sum += node.data
             
-        return node_sum
-            
+        return tree_sum
